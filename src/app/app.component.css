@@ -1,0 +1,186 @@
+.background {
+  background-image: url('https://img.freepik.com/fotos-premium/medidor-ph-manos-guantes-vaso-agua-sobre-fondo-borroso-naturaleza-medida-caracteristicas-agua-potable-dureza-agua-agua-pura-destilada_1028938-159823.jpg');
+  background-size: cover; /* Hace que la imagen cubra toda la página */
+  background-attachment: fixed; /* Fija la imagen para que se vea continua al hacer scroll */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Toolbar */
+.toolbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background-color: lightskyblue;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-circle {
+  background-color: #333;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-image {
+  width: 80%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.logo-text {
+  font-size: 19px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Contenedor principal (Título y Botón) */
+.main-content {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.centered-text {
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.get-started-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  background-color: #d3d3d3;
+  border: 1px solid #888;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.get-started-button:hover {
+  background-color: #4a90e2;
+  color: #fff;
+}
+
+/* Sección de contenido */
+.section-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  scroll-snap-align: start;
+}
+
+.section-list {
+  display: flex;
+  gap: 15px;
+}
+
+.section-list a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.section-list a:hover {
+  color: #4a90e2;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.option-image {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.option-content {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.option-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+  margin: 0;
+}
+
+.option-description {
+  font-size: 14px;
+  color: #333;
+  margin-top: 8px;
+  line-height: 1.4;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.option-description a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.option-description a:hover {
+  text-decoration: underline;
+}
